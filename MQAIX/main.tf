@@ -29,10 +29,3 @@ resource "ibm_pi_instance" "aixmqinstance" {
     pi_cloud_instance_id  = var.powerinstanceid
 
 }
-
-resource "null_resource" "ansible" {
-
-  provisioner "local-exec" {
-    command = "C:\\cygwin64\\bin\\mintty.exe /usr/bin/ansible-playbook -i ${ibm_pi_instance.aixmqinstance.addresses[0].ip}, ansible-playbook/playbook.yml "
-  }
-}
