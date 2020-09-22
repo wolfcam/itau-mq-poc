@@ -29,3 +29,5 @@ resource "ibm_pi_instance" "aixmqinstance" {
     pi_cloud_instance_id  = var.powerinstanceid
 
 }
+
+# ? Finalizado
