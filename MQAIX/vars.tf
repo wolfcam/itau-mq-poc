@@ -1,6 +1,6 @@
 variable "imagename" {
   description = "Name of the image template to be used"
-  default = "aix71-mq92-v5"
+  default = "aix71-mq92-v9"
 }
 
 variable "powerinstanceid" {
